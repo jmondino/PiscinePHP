@@ -1,0 +1,53 @@
+
+<html>
+<head>
+  <title>balloon</title>
+  <style>
+	#balloon {
+	width:200px;
+	height:200px;
+	background-color:red;
+	border-radius:500px;
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: 400px;
+	display: block;
+	}
+	</style>
+</head>
+<body>
+  <script>
+	var size = 200;
+	var i = 0;
+	var colors = ['red', 'green', 'blue'];
+	
+	function clique() {
+	var balloon = document.getElementById('balloon');
+	size += 10;
+	if (size > 420)
+	size = 200;
+	balloon.style.height = size + "px";
+	balloon.style.width = size + "px";
+	i++;
+	if (i > 2)
+	i = 0;
+	balloon.style.backgroundColor = colors[i];
+	}
+	
+	function mousel () {
+	var balloon = document.getElementById('balloon');
+	if (size > 200)
+	{
+	size -= 5;
+	balloon.style.height = size + "px";
+	balloon.style.width = size + "px";
+	}
+	i--;
+	if (i < 0)
+		i = 2;
+	balloon.style.backgroundColor = colors[i];
+	}
+  </script>
+  <div id="balloon" onclick="clique()" onmouseleave="mousel()">
+  </div>
+</body>

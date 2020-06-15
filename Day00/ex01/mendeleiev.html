@@ -1,0 +1,723 @@
+<HTML>
+  <HEAD>
+	<TITLE>Mendeleiev</TITLE>
+	<STYLE>
+	  body {
+	  text-align: center;
+	  background-color: pink;
+	  margin: auto;
+	  padding: 50px;
+	  }
+	  .img {
+	  text-align:center;
+	  }
+	  .wrapper {
+	  display: inline-grid;
+	  grid-template-columns: repeat(18, 80px [col1-start]);
+	  grid-template-rows: repeat(7, 80px [row1-start]);
+	  grid-gap: 1px;
+	  }
+	  .spe {
+	  font-size: 20px;
+	  display: flex;
+	  align-items: center;
+	  justify-content: center;
+	  }
+	  .spe2 {
+	  font-size: 15px;
+	  }
+	  .box {
+	  border-radius: 0px;
+	  padding: 0;
+	  }
+	  .symbol {
+	  font-size: 150%;
+	  text-align: center;
+	  margin: 0;
+	  padding-top: 12;
+	  }
+	  .num {
+	  font-size: 80%;
+	  text-align: left;
+	  margin: 0;
+	  padding-left: 5px;
+	  padding-top: 5px;
+	  }
+	  .mass {
+	  font-size: 80%;
+	  margin: 0;
+	  padding-right: 2px;
+	  text-align: right;
+	  }
+	  .wrapper2 {
+	  display: inline-grid;
+	  grid-template-columns: repeat(18, 80px [col1-start]);
+	  grid-template-rows: repeat(2, 80px [row1-start]);
+	  grid-gap: 1px;
+	  }
+	  .white {
+	  background-color: white;
+	  }
+	  .green {
+	  background-color: Gray;
+	  }
+	  .lightgreen {
+	  background-color: lightgreen;
+	  }
+	  .darkgreen {
+	  background-color: darkgreen;
+	  }
+	  .lightblue {
+	  background-color: DeepSkyBlue ;
+	  }
+	  .cyan {
+	  background-color: cyan;
+	  }
+	  .red {
+	  background-color: orangered;
+	  }
+	  .orange {
+	  background-color: orange;
+	  }
+	  .yellow {
+	  background-color: yellow;
+	  }
+	  .purple {
+	  background-color: purple;
+	  }
+	  .lightpurple {
+	  background-color: orchid;
+	  }
+	  .solid {
+	  border: 2px solid;
+	  }
+	  .dashed{
+	  border: 2px dashed black
+	  }
+	  .dotted {
+	  border: 2px dotted gray
+	  }
+	  .item1 {
+	  grid-column: 1;
+	  grid-row: 1;
+	  }
+	  .item2 {
+	  grid-column: 18;
+	  grid-row: 1;
+	  }
+	  .item3 {
+	  grid-column: 1;
+	  grid-row: 2;
+	  }
+	  .item4 {
+	  grid-column: 2;
+	  grid-row: 2;
+	  }
+	  .item5 {
+	  grid-column: 13;
+	  grid-row: 2;
+	  }
+	  .item6 {
+	  grid-column: 14;
+	  grid-row: 2;
+	  }
+	  .item7 {
+	  grid-column: 15;
+	  grid-row: 2;
+	  }
+	  .item8 {
+	  grid-column: 16;
+	  grid-row: 2;
+	  }
+	  .item9 {
+	  grid-column: 17;
+	  grid-row: 2;
+	  }
+	  .item10 {
+	  grid-column: 18;
+	  grid-row: 2;
+	  }
+	  .item11 {
+	  grid-column: 1;
+	  grid-row: 3;
+	  }
+	  .item12 {
+	  grid-column: 2;
+	  grid-row: 3;
+	  }
+	  .item13 {
+	  grid-column: 13;
+	  grid-row: 3;
+	  }
+	  .item14 {
+	  grid-column: 14;
+	  grid-row: 3;
+	  }
+	  .item15 {
+	  grid-column: 15;
+	  grid-row: 3;
+	  }
+	  .item16 {
+	  grid-column: 16;
+	  grid-row: 3;
+	  }
+	  .item17 {
+	  grid-column: 17;
+	  grid-row: 3;
+	  }
+	  .item18 {
+	  grid-column: 18;
+	  grid-row: 3;
+	  }
+	  .item19 {
+	  grid-column: 1;
+	  grid-row: 4;
+	  }
+	  .item20 {
+	  grid-column: 2;
+	  grid-row: 4;
+	  }
+	  .item21 {
+	  grid-column: 3;
+	  grid-row: 4;
+	  }
+	  .item22 {
+	  grid-column: 4;
+	  grid-row: 4;
+	  }
+	  .item23 {
+	  grid-column: 5;
+	  grid-row: 4;
+	  }
+	  .item24 {
+	  grid-column: 6;
+	  grid-row: 4;
+	  }
+	  .item25 {
+	  grid-column: 7;
+	  grid-row: 4;
+	  }
+	  .item26 {
+	  grid-column: 8;
+	  grid-row: 4;
+	  }
+	  .item27 {
+	  grid-column: 9;
+	  grid-row: 4;
+	  }
+	  .item28 {
+	  grid-column: 10;
+	  grid-row: 4;
+	  }
+	  .item29 {
+	  grid-column: 11;
+	  grid-row: 4;
+	  }
+	  .item30 {
+	  grid-column: 12;
+	  grid-row: 4;
+	  }
+	  .item31 {
+	  grid-column: 13;
+	  grid-row: 4;
+	  }
+	  .item32 {
+	  grid-column: 14;
+	  grid-row: 4;
+	  }
+	  .item33 {
+	  grid-column: 15;
+	  grid-row: 4;
+	  }
+	  .item34 {
+	  grid-column: 16;
+	  grid-row: 4;
+	  }
+	  .item35 {
+	  grid-column: 17;
+	  grid-row: 4;
+	  }
+	  .item36 {
+	  grid-column: 18;
+	  grid-row: 4;
+	  }
+	  .item37 {
+	  grid-column: 1;
+	  grid-row: 5;
+	  }
+	  .item38 {
+	  grid-column: 2;
+	  grid-row: 5;
+	  }
+	  .item39 {
+	  grid-column: 3;
+	  grid-row: 5;
+	  }
+	  .item40 {
+	  grid-column: 4;
+	  grid-row: 5;
+	  }
+	  .item41 {
+	  grid-column: 5;
+	  grid-row: 5;
+	  }
+	  .item42 {
+	  grid-column: 6;
+	  grid-row: 5;
+	  }
+	  .item43 {
+	  grid-column: 7;
+	  grid-row: 5;
+	  }
+	  .item44 {
+	  grid-column: 8;
+	  grid-row: 5;
+	  }
+	  .item45 {
+	  grid-column: 9;
+	  grid-row: 5;
+	  }
+	  .item46 {
+	  grid-column: 10;
+	  grid-row: 5;
+	  }
+	  .item47 {
+	  grid-column: 11;
+	  grid-row: 5;
+	  }
+	  .item48 {
+	  grid-column: 12;
+	  grid-row: 5;
+	  }
+	  .item49 {
+	  grid-column: 13;
+	  grid-row: 5;
+	  }
+	  .item50 {
+	  grid-column: 14;
+	  grid-row: 5;
+	  }
+	  .item51 {
+	  grid-column: 15;
+	  grid-row: 5;
+	  }
+	  .item52 {
+	  grid-column: 16;
+	  grid-row: 5;
+	  }
+	  .item53 {
+	  grid-column: 17;
+	  grid-row: 5;
+	  }
+	  .item54 {
+	  grid-column: 18;
+	  grid-row: 5;
+	  }
+	  .item55 {
+	  grid-column: 1;
+	  grid-row: 6;
+	  }
+	  .item56 {
+	  grid-column: 2;
+	  grid-row: 6;
+	  }
+	  .item57 {
+	  grid-column: 3;
+	  grid-row: 6;
+	  }
+	  .item58 {
+	  grid-column: 4;
+	  grid-row: 6;
+	  }
+	  .item59 {
+	  grid-column: 5;
+	  grid-row: 6;
+	  }
+	  .item60 {
+	  grid-column: 6;
+	  grid-row: 6;
+	  }
+	  .item61 {
+	  grid-column: 7;
+	  grid-row: 6;
+	  }
+	  .item62 {
+	  grid-column: 8;
+	  grid-row: 6;
+	  }
+	  .item63 {
+	  grid-column: 9;
+	  grid-row: 6;
+	  }
+	  .item64 {
+	  grid-column: 10;
+	  grid-row: 6;
+	  }
+	  .item65 {
+	  grid-column: 11;
+	  grid-row: 6;
+	  }
+	  .item66 {
+	  grid-column: 12;
+	  grid-row: 6;
+	  }
+	  .item67 {
+	  grid-column: 13;
+	  grid-row: 6;
+	  }
+	  .item68 {
+	  grid-column: 14;
+	  grid-row: 6;
+	  }
+	  .item69 {
+	  grid-column: 15;
+	  grid-row: 6;
+	  }
+	  .item70 {
+	  grid-column: 16;
+	  grid-row: 6;
+	  }
+	  .item71 {
+	  grid-column: 17;
+	  grid-row: 6;
+	  }
+	  .item72 {
+	  grid-column: 18;
+	  grid-row: 6;
+	  }
+	  .item73 {
+	  grid-column: 1;
+	  grid-row: 7;
+	  }
+	  .item74 {
+	  grid-column: 2;
+	  grid-row: 7;
+	  }
+	  .item75 {
+	  grid-column: 3;
+	  grid-row: 7;
+	  }
+	  .item76 {
+	  grid-column: 4;
+	  grid-row: 7;
+	  }
+	  .item77 {
+	  grid-column: 5;
+	  grid-row: 7;
+	  }
+	  .item78 {
+	  grid-column: 6;
+	  grid-row: 7;
+	  }
+	  .item79 {
+	  grid-column: 7;
+	  grid-row: 7;
+	  }
+	  .item80 {
+	  grid-column: 8;
+	  grid-row: 7;
+	  }
+	  .item81 {
+	  grid-column: 9;
+	  grid-row: 7;
+	  }
+	  .item82 {
+	  grid-column: 10;
+	  grid-row: 7;
+	  }
+	  .item83 {
+	  grid-column: 11;
+	  grid-row: 7;
+	  }
+	  .item84 {
+	  grid-column: 12;
+	  grid-row: 7;
+	  }
+	  .item85 {
+	  grid-column: 13;
+	  grid-row: 7;
+	  }
+	  .item86 {
+	  grid-column: 14;
+	  grid-row: 7;
+	  }
+	  .item87 {
+	  grid-column: 15;
+	  grid-row: 7;
+	  }
+	  .item88 {
+	  grid-column: 16;
+	  grid-row: 7;
+	  }
+	  .item89 {
+	  grid-column: 17;
+	  grid-row: 7;
+	  }
+	  .item90 {
+	  grid-column: 18;
+	  grid-row: 7;
+	  }
+	  .item91 {
+	  grid-column: 4;
+	  grid-row: 1;
+	  }
+	  .item92 {
+	  grid-column: 5;
+	  grid-row: 1;
+	  }
+	  .item93 {
+	  grid-column: 6;
+	  grid-row: 1;
+	  }
+	  .item94 {
+	  grid-column: 7;
+	  grid-row: 1;
+	  }
+	  .item95 {
+	  grid-column: 8;
+	  grid-row: 1;
+	  }
+	  .item96 {
+	  grid-column: 9;
+	  grid-row: 1;
+	  }
+	  .item97 {
+	  grid-column: 10;
+	  grid-row: 1;
+	  }
+	  .item98 {
+	  grid-column: 11;
+	  grid-row: 1;
+	  }
+	  .item99 {
+	  grid-column: 12;
+	  grid-row: 1;
+	  }
+	  .item100 {
+	  grid-column: 13;
+	  grid-row: 1;
+	  }
+	  .item101 {
+	  grid-column: 14;
+	  grid-row: 1;
+	  }
+	  .item102 {
+	  grid-column: 15;
+	  grid-row: 1;
+	  }
+	  .item103 {
+	  grid-column: 16;
+	  grid-row: 1;
+	  }
+	  .item104 {
+	  grid-column: 17;
+	  grid-row: 1;
+	  }
+	  .item105 {
+	  grid-column: 4;
+	  grid-row: 2;
+	  }
+	  .item106 {
+	  grid-column: 5;
+	  grid-row: 2;
+	  }
+	  .item107 {
+	  grid-column: 6;
+	  grid-row: 2;
+	  }
+	  .item108 {
+	  grid-column: 7;
+	  grid-row: 2;
+	  }
+	  .item109 {
+	  grid-column: 8;
+	  grid-row: 2;
+	  }
+	  .item110 {
+	  grid-column: 9;
+	  grid-row: 2;
+	  }
+	  .item111 {
+	  grid-column: 10;
+	  grid-row: 2;
+	  }
+	  .item112 {
+	  grid-column: 11;
+	  grid-row: 2;
+	  }
+	  .item113 {
+	  grid-column: 12;
+	  grid-row: 2;
+	  }
+	  .item114 {
+	  grid-column: 13;
+	  grid-row: 2;
+	  }
+	  .item115 {
+	  grid-column: 14;
+	  grid-row: 2;
+	  }
+	  .item116 {
+	  grid-column: 15;
+	  grid-row: 2;
+	  }
+	  .item117 {
+	  grid-column: 16;
+	  grid-row: 2;
+	  }
+	  .item118 {
+	  grid-column: 17;
+	  grid-row: 2;
+	  }
+	  .item119 {
+	  grid-column: 3;
+	  grid-row: 1;
+	  }
+	  .item120 {
+	  grid-column: 3;
+	  grid-row: 2;
+	  }
+	</STYLE>
+  </HEAD>
+  <BODY>
+	<div class="img">
+	  <img
+		 src="/Users/jmondino/Desktop/imgphp/mende.jpg"
+		 />
+	  <br />
+	  <br />
+	  <br />
+	  <br />
+	  <br />
+	  <br />
+	</div>
+<div class="wrapper" contenteditable="true">
+  <div class="box lightblue solid item1"><p class="mass">1,007975</p><p class="symbol">H</p><p class="num">1</p></div>
+  <div class="box purple solid item2"><p class="mass">4,002602</p><p class="symbol">He</p><p class="num">2</p></div>
+  <div class="box red solid item3"><p class="mass">6,9395</p><p class="symbol">Li</p><p class="num">3</p></div>
+  <div class="box orange solid item4"><p class="mass">9,0121831</p><p class="symbol">Be</p><p class="num">4</p></div>
+  <div class="box cyan solid item5"><p class="mass">10,8135</p><p class="symbol">B</p><p class="num ">5</p></div>
+  <div class="box lightblue solid item6"><p class="mass">12,0106</p><p class="symbol">C</p><p class="num">6</p></div>
+  <div class="box lightblue solid item7"><p class="mass">14,006855</p><p class="symbol">N</p><p class="num">7</p></div>
+  <div class="box lightblue solid item8"><p class="mass">15,99940</p><p class="symbol">O</p><p class="num">8</p></div>
+  <div class="box lightpurple solid item9"><p class="mass">18,99840316</p><p class="symbol">F</p><p class="num">9</p></div>
+  <div class="box purple solid item10"><p class="mass">20,1797</p><p class="symbol">Ne</p><p class="num">10</p></div>
+  <div class="box red solid item11"><p class="mass">22,98976928</p><p class="symbol">Na</p><p class="num">11</p></div>
+  <div class="box orange solid item12"><p class="mass">24,3055</p><p class="symbol">Mg</p><p class="num">12</p></div>
+  <div class="box green solid item13"><p class="mass">26,9815385</p><p class="symbol">Al</p><p class="num">13</p></div>
+  <div class="box cyan solid item14"><p class="mass">28,085</p><p class="symbol">Si</p><p class="num">14</p></div>
+  <div class="box lightblue solid item15"><p class="mass">30,97376200</p><p class="symbol">P</p><p class="num">15</p></div>
+  <div class="box lightblue solid item16"><p class="mass">32,0675</p><p class="symbol">S</p><p class="num">16</p></div>
+  <div class="box lightpurple solid item17"><p class="mass">35,4515</p><p class="symbol">Cl</p><p class="num">17</p></div>
+  <div class="box purple solid item18"><p class="mass">39,948</p><p class="symbol">Al</p><p class="num">18</p></div>
+  <div class="box red solid item19"><p class="mass">39,0983</p><p class="symbol">K</p><p class="num">19</p></div>
+  <div class="box orange solid item20"><p class="mass">40,078</p><p class="symbol">Ca</p><p class="num">20</p></div>
+  <div class="box yellow solid item21"><p class="mass">44,955908</p><p class="symbol">Sc</p><p class="num">21</p></div>
+  <div class="box yellow solid item22"><p class="mass">47,867</p><p class="symbol">Ti</p><p class="num">22</p></div>
+  <div class="box yellow solid item23"><p class="mass">50,9415</p><p class="symbol">V</p><p class="num">23</p></div>
+  <div class="box yellow solid item24"><p class="mass">51,9961</p><p class="symbol">Cr</p><p class="num">24</p></div>
+  <div class="box yellow solid item25"><p class="mass">54,938044</p><p class="symbol">Mn</p><p class="num">25</p></div>
+  <div class="box yellow solid item26"><p class="mass">55,845</p><p class="symbol">Fe</p><p class="num">26</p></div>
+  <div class="box yellow solid item27"><p class="mass">58,933194</p><p class="symbol">Co</p><p class="num">27</p></div>
+  <div class="box yellow solid item28"><p class="mass">58,6934</p><p class="symbol">Ni</p><p class="num">28</p></div>
+  <div class="box yellow solid item29"><p class="mass">63,546</p><p class="symbol">Cu</p><p class="num">29</p></div>
+  <div class="box green solid item30"><p class="mass">65,38</p><p class="symbol">Zn</p><p class="num">30</p></div>
+  <div class="box green solid item31"><p class="mass">69,723</p><p class="symbol">Ga</p><p class="num">31</p></div>
+  <div class="box cyan solid item32"><p class="mass">72,630</p><p class="symbol">Ge</p><p class="num">32</p></div>
+  <div class="box cyan solid item33"><p class="mass">74,921595</p><p class="symbol">As</p><p class="num">33</p></div>
+  <div class="box lightblue solid item34"><p class="mass">78,971</p><p class="symbol">Se</p><p class="num">34</p></div>
+  <div class="box lightpurple solid item35"><p class="mass">79,904</p><p class="symbol">Br</p><p class="num">35</p></div>
+  <div class="box purple solid item36"><p class="mass">83,798</p><p class="symbol">Kr</p><p class="num">36</p></div>
+  <div class="box red solid item37"><p class="mass">85,4678</p><p class="symbol">Rb</p><p class="num">37</p></div>
+  <div class="box orange solid item38"><p class="mass">87,62</p><p class="symbol">Sr</p><p class="num">38</p></div>
+  <div class="box yellow solid item39"><p class="mass">88,90584</p><p class="symbol">y</p><p class="num">39</p></div>
+  <div class="box yellow solid item40"><p class="mass">91,224</p><p class="symbol">Zr</p><p class="num">40</p></div>
+  <div class="box yellow solid item41"><p class="mass">92,90637</p><p class="symbol">Nb</p><p class="num">41</p></div>
+  <div class="box yellow solid item42"><p class="mass">95,95</p><p class="symbol">Mo</p><p class="num">42</p></div>
+  <div class="box yellow solid item43"><p class="mass">98</p><p class="symbol">Tc</p><p class="num">43</p></div>
+  <div class="box yellow solid item44"><p class="mass">101,07</p><p class="symbol">Ru</p><p class="num">44</p></div>
+  <div class="box yellow solid item45"><p class="mass">102,90550</p><p class="symbol">Rh</p><p class="num">45</p></div>
+  <div class="box yellow solid item46"><p class="mass">106,42</p><p class="symbol">Pd</p><p class="num">46</p></div>
+  <div class="box yellow solid item47"><p class="mass">107,8682</p><p class="symbol">Ag</p><p class="num">47</p></div>
+  <div class="box green solid item48"><p class="mass">112,414</p><p class="symbol">Cd</p><p class="num">48</p></div>
+  <div class="box green solid item49"><p class="mass">114,818</p><p class="symbol">In</p><p class="num">49</p></div>
+  <div class="box green solid item50"><p class="mass">118,710</p><p class="symbol">Sn</p><p class="num">50</p></div>
+  <div class="box cyan solid item51"><p class="mass">121,760</p><p class="symbol">Sb</p><p class="num">51</p></div>
+  <div class="box cyan solid item52"><p class="mass">127,60</p><p class="symbol">Te</p><p class="num">52</p></div>
+  <div class="box lightpurple solid item53"><p class="mass">126,90447</p><p class="symbol">I</p><p class="num">53</p></div>
+  <div class="box purple solid item54"><p class="mass">131,293</p><p class="symbol">Xe</p><p class="num">54</p></div>
+  <div class="box red solid item55"><p class="mass">132,905452</p><p class="symbol">Cs</p><p class="num">55</p></div>
+  <div class="box orange solid item56"><p class="mass">137,327</p><p class="symbol">Ba</p><p class="num">56</p></div>
+  <div class="box spe lightgreen solid item57">57-71</div><div class="spe2 item57">Lanthanides</div>
+  <div class="box yellow solid item58"><p class="mass">178,49</p><p class="symbol">Hf</p><p class="num">72</p></div>
+  <div class="box yellow solid item59"><p class="mass">180,94788</p><p class="symbol">Ta</p><p class="num">73</p></div>
+  <div class="box yellow solid item60"><p class="mass">183,84</p><p class="symbol">W</p><p class="num">74</p></div>
+  <div class="box yellow solid item61"><p class="mass">186,207</p><p class="symbol">Re</p><p class="num">75</p></div>
+  <div class="box yellow solid item62"><p class="mass">190,23</p><p class="symbol">Os</p><p class="num">76</p></div>
+  <div class="box yellow solid item63"><p class="mass">192,217</p><p class="symbol">Ir</p><p class="num">77</p></div>
+  <div class="box yellow solid item64"><p class="mass">195,084</p><p class="symbol">Pt</p><p class="num">78</p></div>
+  <div class="box yellow solid item65"><p class="mass">196,966569</p><p class="symbol">Au</p><p class="num">79</p></div>
+  <div class="box green solid item66"><p class="mass">200,592</p><p class="symbol">Hg</p><p class="num">80</p></div>
+  <div class="box green solid item67"><p class="mass">204,3835</p><p class="symbol">Tl</p><p class="num">81</p></div>
+  <div class="box green solid item68"><p class="mass">207,2</p><p class="symbol">Pb</p><p class="num">82</p></div>
+  <div class="box green solid item69"><p class="mass">208,98040</p><p class="symbol">Bi</p><p class="num">83</p></div>
+  <div class="box green dashed item70"><p class="mass">209</p><p class="symbol">Po</p><p class="num">84</p></div>
+  <div class="box cyan dashed item71"><p class="mass">210</p><p class="symbol">At</p><p class="num">85</p></div>
+  <div class="box purple dashed item72"><p class="mass">222</p><p class="symbol">Rn</p><p class="num">86</p></div>
+  <div class="box red dashed item73"><p class="mass">223</p><p class="symbol">Fr</p><p class="num">87</p></div>
+  <div class="box orange dashed item74"><p class="mass">226</p><p class="symbol">Ra</p><p class="num">88</p></div>
+  <div class="box spe darkgreen solid item75">89-103</div><div class="spe2 item75">Actinides</div>
+  <div class="box yellow dotted item76"><p class="mass">267</p><p class="symbol">Rf</p><p class="num">104</p></div>
+  <div class="box yellow dotted item77"><p class="mass">268</p><p class="symbol">Db</p><p class="num">105</p></div>
+  <div class="box yellow dotted item78"><p class="mass">269</p><p class="symbol">Sg</p><p class="num">106</p></div>
+  <div class="box yellow dotted item79"><p class="mass">270</p><p class="symbol">Bh</p><p class="num">107</p></div>
+  <div class="box yellow dotted item80"><p class="mass">277</p><p class="symbol">Hs</p><p class="num">108</p></div>
+  <div class="box white dotted item81"><p class="mass">278</p><p class="symbol">Mt</p><p class="num">109</p></div>
+  <div class="box white dotted item82"><p class="mass">281</p><p class="symbol">Ds</p><p class="num">110</p></div>
+  <div class="box white dotted item83"><p class="mass">282</p><p class="symbol">Rg</p><p class="num">111</p></div>
+  <div class="box yellow dotted item84"><p class="mass">285</p><p class="symbol">Cn</p><p class="num">112</p></div>
+  <div class="box white dotted item85"><p class="mass">286</p><p class="symbol">Nh</p><p class="num">113</p></div>
+  <div class="box white dotted item86"><p class="mass">289</p><p class="symbol">Fl</p><p class="num">114</p></div>
+  <div class="box white dotted item87"><p class="mass">289</p><p class="symbol">Mc</p><p class="num">115</p></div>
+  <div class="box white dotted item88"><p class="mass">293</p><p class="symbol">Lv</p><p class="num">116</p></div>
+  <div class="box white dotted item89"><p class="mass">294</p><p class="symbol">Ts</p><p class="num">117</p></div>
+  <div class="box white dotted item90"><p class="mass">294</p><p class="symbol">Og</p><p class="num">118</p></div>
+</div>
+<br />
+<br />
+<br />
+<div class="wrapper2" contenteditable="true">
+<div class="box lightgreen solid item91"><p class="mass">140,116</p><p class="symbol">Ce</p><p class="num">58</p></div>
+<div class="box lightgreen solid item92"><p class="mass">140,90766</p><p class="symbol">Pr</p><p class="num">59</p></div>
+<div class="box lightgreen solid item93"><p class="mass">144,242</p><p class="symbol">Nd</p><p class="num">60</p></div>
+<div class="box lightgreen solid item94"><p class="mass">145</p><p class="symbol">Pm</p><p class="num">61</p></div>
+<div class="box lightgreen dashed item95"><p class="mass">150,36</p><p class="symbol">Sm</p><p class="num">62</p></div>
+<div class="box lightgreen solid item96"><p class="mass">151,964</p><p class="symbol">Eu</p><p class="num">63</p></div>
+<div class="box lightgreen solid item97"><p class="mass">157,25</p><p class="symbol">Gd</p><p class="num">64</p></div>
+<div class="box lightgreen solid item98"><p class="mass">158,92535</p><p class="symbol">Tb</p><p class="num">65</p></div>
+<div class="box lightgreen solid item99"><p class="mass">162,500</p><p class="symbol">Dy</p><p class="num">66</p></div>
+<div class="box lightgreen solid item100"><p class="mass">164,93033</p><p class="symbol">Ho</p><p class="num">67</p></div>
+<div class="box lightgreen solid item101"><p class="mass">167,259</p><p class="symbol">Er</p><p class="num">68</p></div>
+<div class="box lightgreen solid item102"><p class="mass">168,93422</p><p class="symbol">Tm</p><p class="num">69</p></div>
+<div class="box lightgreen solid item103"><p class="mass">173,045</p><p class="symbol">Yb</p><p class="num">70</p></div>
+<div class="box lightgreen solid item104"><p class="mass">174,9668</p><p class="symbol">Lu</p><p class="num">71</p></div>
+<div class="box darkgreen solid item105"><p class="mass">232,0377</p><p class="symbol">Th</p><p class="num">90</p></div>
+<div class="box darkgreen dashed item106"><p class="mass">231,03588</p><p class="symbol">Pa</p><p class="num">91</p></div>
+<div class="box darkgreen solid item107"><p class="mass">238,02891</p><p class="symbol">U</p><p class="num">92</p></div>
+<div class="box darkgreen dashed item108"><p class="mass">237</p><p class="symbol">Np</p><p class="num">93</p></div>
+<div class="box darkgreen dashed item109"><p class="mass">244</p><p class="symbol">Pu</p><p class="num">94</p></div>
+<div class="box darkgreen dotted item110"><p class="mass">243</p><p class="symbol">Am</p><p class="num">95</p></div>
+<div class="box darkgreen dotted item111"><p class="mass">247</p><p class="symbol">Cm</p><p class="num">96</p></div>
+<div class="box darkgreen dotted item112"><p class="mass">247</p><p class="symbol">Bk</p><p class="num">97</p></div>
+<div class="box darkgreen dotted item113"><p class="mass">251</p><p class="symbol">Cf</p><p class="num">98</p></div>
+<div class="box darkgreen dotted item114"><p class="mass">252</p><p class="symbol">Es</p><p class="num">99</p></div>
+<div class="box darkgreen dotted item115"><p class="mass">257</p><p class="symbol">Fm</p><p class="num">100</p></div>
+<div class="box darkgreen dotted item116"><p class="mass">258</p><p class="symbol">Md</p><p class="num">101</p></div>
+<div class="box darkgreen dotted item117"><p class="mass">259</p><p class="symbol">No</p><p class="num">102</p></div>
+<div class="box darkgreen dotted item118"><p class="mass">266</p><p class="symbol">Lr</p><p class="num">103</p></div>
+<div class="box lightgreen solid item119"><p class="mass">138,90547</p><p class="symbol">La</p><p class="num">57</p></div>
+<div class="box darkgreen dashed item120"><p class="mass">227</p><p class="symbol">Ac</p><p class="num">89</p></div>
+
+</div>
+  </BODY>
+</HTML>

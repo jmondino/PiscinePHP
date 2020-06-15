@@ -1,0 +1,31 @@
+
+<- Vector ----------------------------------------------------------------------
+The Vertex class contains information about one Vector.
+
+An instance can be constructed by passing in a Vertex representing the
+the destination of the Vector and another representing the origin:
+$orig1 = new Vertex( array( 'x' => 23.87, 'y' => -37.95, 'z' => 78.34 ) );
+$dest1 = new Vertex( array( 'x' => -12.34, 'y' => 23.45, 'z' => -34.56 ) );
+$vec  = new Vector( array( 'orig' => $orig1, 'dest' => $dest1 ) );
+
+The w component of a Vector will always be set to 0.0 to facilitate
+calculations with matrices.
+
+If no origin Vertex is specified, the default origin will be set to
+x = 0
+y = 0
+z = 0
+
+The components can only be read and not set, therefore Vector contains only
+getters. However, there are a number of useful methods within the class:
+
+float magnitude(): Returns the magnitude of the Vector.
+Vector normalize(): Returns a new, normalized Vector.
+Vector add( Vector $rhs ): Returns the addition of two vectors.
+Vector sub( Vector $rhs ): Returns the subtraction of two vectors.
+Vector opposite(): Returns the Vector with inverted values.
+Vector scalarProduct( $k ): Returns the scalar product of two Vectors.
+float dotProduct( Vector $rhs ): Returns the dot product of two Vectors.
+float cos( Vector $rhs ): Returns the cosine of the angle between Vectors.
+Vector crossProduct( Vector $rhs ): Returns the cross product of two Vectors.
+---------------------------------------------------------------------- Vector ->
